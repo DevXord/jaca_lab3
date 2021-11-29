@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 
@@ -14,5 +11,31 @@ public class Main {
             c) wyświetlić dane z tablicy, użyć pętli for lub forEach
             d) dane powinny być estetycznie przedstawione
          */
+
+        Student st1 = new Student();
+        st1.name = "Jan";
+        st1.surname = "Kowal";
+        st1.age = 23;
+        st1.isActive = true;
+
+        Student st2 = new Student();
+        st2.name = "Edmund";
+        st2.surname = "Nitka";
+        st2.age = 53;
+        st2.isActive = true;
+
+        Student st3 = new Student();
+        st3.name = "Adam";
+        st3.surname = "Testowy";
+        st3.age =13;
+        st3.isActive = false;
+
+        Student[] stutentTables = {st1, st2,st3};
+
+        for (Student item : stutentTables) {
+
+            System.out.println("\n"+item.toString());
+
+        }
     }
 }
